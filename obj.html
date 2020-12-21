@@ -1,0 +1,41 @@
+<html>
+<body>
+<script>
+function Sample(a)
+{
+this.a=a;
+a=prompt("enter value","")
+this.check=function(){
+if(a>0){
+document.write("positive")
+}
+else{
+document.write("negative")
+}
+}
+this.odd=function(){
+if(a%2==0)
+{
+document.write("even")
+}
+else
+{
+document.write("odd")
+}
+}
+this.number=function(){
+for(i=1;i<=a;i++)
+{
+document.write(i)
+}
+}
+}
+
+var obj=new Sample()
+obj.check()
+obj.odd()
+obj.number()
+</script>
+</body>
+</html>
+
